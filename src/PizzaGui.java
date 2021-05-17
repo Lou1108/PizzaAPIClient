@@ -31,7 +31,6 @@ public class PizzaGui extends JFrame
         titleName.setForeground(Color.BLACK);
         titleName.setFont(f);
         title.add(titleName);
-        System.out.println();//TODO
 
 
 
