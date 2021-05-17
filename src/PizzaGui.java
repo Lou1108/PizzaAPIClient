@@ -115,7 +115,7 @@ public class PizzaGui extends JFrame
             System.out.println("heyy");
             System.out.println("INOUT: " + input);
             String output = request.get("order/deliverytime/" + input);
-            JOptionPane.showMessageDialog(null, request.parseOrderHistory(output));
+            JOptionPane.showMessageDialog(null, request.deliverytime(output));
         });
 
         panel.add(use);

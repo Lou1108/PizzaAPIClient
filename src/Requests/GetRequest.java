@@ -155,6 +155,31 @@ public class GetRequest {
         }
         return output;
     }
+
+
+    public String deliverytime(String response){
+        if (response.charAt(0) != '['){
+            return response;
+        }
+
+        JSONArray pizzas = new JSONArray(response);
+        String output = "";
+        for (int i = 0; i<pizzas.length();i++){
+            JSONObject pizza = pizzas.getJSONObject(i);
+            System.out.println(pizza);
+            //TODO             adjust parsing delivery time not found...
+            //JSONObject order = pizza.getJSONObject("order");
+            String delTime = pizza.getString("deliverytime");
+
+
+            output += ("delivery_time: " + delTime
+                    + "\n" + "\n");
+        }
+        return output;
+
+    }
+
+
 }
 
 
