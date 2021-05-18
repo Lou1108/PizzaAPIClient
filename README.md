@@ -2,6 +2,8 @@
 
 Build Instructions
 
-Clone the repository
-add json-20210307.jar as a new library to the new project
-Run -> gradle runBoot Main.java
+1. Clone the repository
+2. add json-20210307.jar as a new library to the new project
+3. Run -> Main.java
+
+
